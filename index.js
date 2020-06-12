@@ -1,8 +1,6 @@
 const { createFilter } = require('@rollup/pluginutils');
 const MagicString = require('magic-string');
 
-const newStr = 'I am rollup.js!';
-
 module.exports = function replaceBlocks(options = {}) {
   const filter = createFilter(options.include, options.exclude);
   const sourcemap = options.sourcemap === true;
